@@ -1,0 +1,7 @@
+@media screen and (max-width:720px) {
+    .calage{
+        width: 80vw;
+        font-size: 2vw;
+        margin: auto;
+    }
+}

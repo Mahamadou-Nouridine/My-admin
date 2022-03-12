@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+
+  <!-- canva -->
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+  <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+
+  <link rel="stylesheet" href="editor.css">
+  <script src="editor.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper blue">
+          <a href="index.html" class="brand-logo" style="margin-left: 20%;">MyAdmin</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down" style="margin-right: 20%;">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="post.html">Post</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="comments.html">Comment</a></li>
+            <li><a href="user.html">User</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Dashboard</a></li>
+            <li><a href="post.html">Post</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="comments.html">Comment</a></li>
+            <li><a href="user.html">User</a></li>
+      </ul>
+
+
+
+      <div class="row grey lighten-3">
+          <div class="col s12 m6 l3">
+              <div class="card blue white-text">
+                  <div class="card-content center-align">
+                    <i class="material-icons medium">sentiment_very_satisfied</i>
+                    <h5>Monthly Visitors</h5>
+                    <h4>35900</h4>
+                    <div class="progress">
+                        <div class="determinate white" style="width:40% ;"></div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m6 l3">
+              <div class="card blue white-text">
+                  <div class="card-content center-align">
+                    <i class="material-icons medium">edit</i>
+                    <h5>Blog Post</h5>
+                    <h4>207</h4>
+                    <div class="progress">
+                        <div class="determinate white" style="width:25% ;"></div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m6 l3">
+              <div class="card blue white-text">
+                  <div class="card-content center-align">
+                    <i class="material-icons medium">mode_comment</i>
+                    <h5>Comments</h5>
+                    <h4>2300</h4>
+                    <div class="progress">
+                        <div class="determinate white" style="width:40% ;"></div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col s12 m6 l3">
+              <div class="card blue white-text">
+                  <div class="card-content center-align">
+                    <i class="material-icons medium">people</i>
+                    <h5>Users</h5>
+                    <h4>410</h4>
+                    <div class="progress">
+                        <div class="determinate white" style="width:12% ;"></div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+      <div class="row blue lighten-3" style="padding: 20px;">
+          <div class="col s12 m8">
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+          </div>
+          <div class="col s12 m4">
+              <div class="collection">
+                  <div class="collection-item " style="height: 80px;">
+                     <div class="row">
+                         <div class="col s3">
+                            <img src="image1.jpeg" alt="" class="circle" width="50"> 
+                         </div>
+                         <div class="col s9">
+                            <span class="title">Mahamadou Nouridine
+                            <span class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa sint numquam totam rem excepturi, eum molestias consectetur sit placeat labore ducimus iste cumque ab iusto suscipit! Recusandae nostrum assumenda perferendis?</span>
+                            <span class="green-text">Approve</span> <span class="red-text" style="border-left: solid black 1px"> Deny</span>
+                        </span>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="collection-item " style="height: 80px;">
+                     <div class="row">
+                         <div class="col s3">
+                            <img src="image2.png" alt="" class="circle" width="50"> 
+                         </div>
+                         <div class="col s9">
+                            <span class="title">Nana Zoubeida
+                            <span class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa sint numquam totam rem excepturi, eum molestias consectetur sit placeat labore ducimus iste cumque ab iusto suscipit! Recusandae nostrum assumenda perferendis?</span>
+                            <span class="green-text">Approve</span> <span class="red-text" style="border-left: solid black 1px"> Deny</span>
+                        </span>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="collection-item " style="height: 80px;">
+                     <div class="row">
+                         <div class="col s3">
+                            <img src="image3.png" alt="" class="circle" width="75"> 
+                         </div>
+                         <div class="col s9">
+                            <span class="title">Aminou Mamoudou
+                            <span class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa sint numquam totam rem excepturi, eum molestias consectetur sit placeat labore ducimus iste cumque ab iusto suscipit! Recusandae nostrum assumenda perferendis?</span>
+                            <span class="green-text">Approve</span> <span class="red-text" style="border-left: solid black 1px"> Deny</span>
+                        </span>
+                         </div>
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row">
+          <div class="col s12 m8">
+            <h5>Recent Post</h5>
+            <table class="striped">
+                <thead>
+                  <tr>
+                      <th>Title</th>
+                      <th>Category</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>Post one</td>
+                    <td>Web Developpement</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  <tr>
+                    <td>Post two</td>
+                    <td>Graphic design</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          <div class="col s12 m4">
+              <h4>Quick Todos</h4>
+              <div class="input-field">
+                <input type="text" placeholder="Add Todo" class="validate">
+              </div>
+            <div class="collection">
+                <div class="collection-item " style="height: 50px;">
+                   <div class="row">
+                       
+                       <div class="col s11 col-wrapper">
+                          <span class="title">Todo One</span>
+                      </span>
+                       </div>
+                       <div class="col s1 white">
+                        <i class="material-icons white teal-text">close</i>
+                     </div>
+                   </div>
+                </div>
+                <div class="collection-item " style="height: 50px;">
+                   <div class="row">
+                       
+                       <div class="col s11 col-wrapper">
+                          <span class="title">Todo Two</span>
+                      </span>
+                       </div>
+                       <div class="col s1">
+                       <i class="material-icons white teal-text">close</i>
+                     </div>
+                   </div>
+                </div>
+                <div class="collection-item " style="height: 50px;">
+                   <div class="row">
+                       
+                       <div class="col s11 col-wrapper">
+                          <span class="title">Todo Three</span>
+                      </span>
+                       </div>
+                       <div class="col s1">
+                        <i class="material-icons white teal-text">close</i>
+                     </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="fixed-action-btn">
+        <a  class="btn-floating btn-large red">
+          <div class="large material-icons">mode_edit</div>
+        </a>
+        <ul>
+          <li><a href="#modal1" class="btn-floating modal-trigger"><i class="material-icons blue">mode_edit</i></a></li>
+    <li><a href="#modal2" class="btn-floating modal-trigger"><i class="material-icons blue">folder</i></a></li>
+    <li><a href="#modal3" class="btn-floating modal-trigger "><i class="material-icons blue">people_alt</i></a></li>
+    
+        </ul>
+      </div>
+
+
+      <div class="modal" id="modal1">
+        <div class="modal-content">
+          <h2>Add Post</h2>
+          <form action="">
+            <div class="input-field">
+              <input type="text" placeholder="Title" class="validate">
+            </div>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Materialize Select</label>
+            </div>
+
+            <textarea name="text_editor"></textarea>
+        <script>
+            CKEDITOR.replace( 'text_editor' );
+        </script>
+            
+
+            <input type="submit" class="btn">
+
+          </form>
+        </div>
+      </div>
+
+
+      <div class="modal" id="modal2">
+        <div class="modal-content">
+          <h2>Add Category</h2>
+          <div class="input-field">
+            <input type="text" placeholder="Titre" class="validate">
+          </div>
+          <input type="submit" class="btn">
+        </div>
+      </div>
+
+      <div class="modal" id="modal3">
+        <div class="modal-content">
+          <h2>Add User</h2>
+          <div class="input-field">
+            <input type="text" placeholder="Name" class="validate">
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Email" class="validate">
+          </div>
+          <div class="input-field">
+            <input type="password" placeholder="Pasword" class="validate">
+          </div>
+          <div class="input-field">
+            <input type="password" placeholder="Confirm Password" class="validate">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn">
+        </div>
+      </div>
+
+      
+      <div class="row ">
+        <div class="page-footer blue" style="padding: 30px; position: absolute; width: 100%; right: 0;">
+          <p class="center-align">MyAdmin CodeLOccol Copyright © 2019</p>
+        </div>
+      </div>
+
+
+
+      
+
+
+
+
+</body>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems)
+  });
+
+
+
+  window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Simple Line Chart"
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+chart.render();
+
+}  
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems);
+  });
+</script>
+</html>
