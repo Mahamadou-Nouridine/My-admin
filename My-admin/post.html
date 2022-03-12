@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+
+ 
+  <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+    
+    <title>Posts</title>
+</head>
+<body class="grey lighten-2">
+    <nav>
+        <div class="nav-wrapper blue">
+          <a href="index.html" class="brand-logo" style="margin-left: 20%;">MyAdmin</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down" style="margin-right: 20%;">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="post.html">Post</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="comments.html">Comment</a></li>
+            <li><a href="user.html">User</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Dashboard</a></li>
+            <li><a href="post.html">Post</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="comments.html">Comment</a></li>
+            <li><a href="user.html">User</a></li>
+      </ul>
+
+      <div class="row">
+          <div class="row" style="max-width: 1000px;">
+            <table class="striped  calage white" >
+                <h5>Recent Post</h5>
+                <thead>
+                  <tr>
+                      <th>Title</th>
+                      <th>Category</th>
+                      <th>Date Created</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>Post one</td>
+                    <td>Web Developpement</td>
+                    <td>October 1; 2019</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  <tr>
+                    <td>Post two</td>
+                    <td>Graphic design</td>
+                    <td>October 1; 2019</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td>October 1; 2019</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td>October 1; 2019</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td>October 1; 2019</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td>October 1; 2019</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td>October 1; 2019</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  <tr>
+                    <td>Post Three</td>
+                    <td>Web Developpement</td>
+                    <td>October 1; 2019</td>
+                    <td><a href="#" class="btn blue">DETAILs</a></td>
+                  </tr>
+                  
+                </tbody>
+                
+              </table>
+              <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active  blue"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+              </ul>
+          </div>
+
+            
+            
+        </div>
+        
+
+        <div class="fixed-action-btn">
+            <a  class="btn-floating btn-large red">
+              <div class="large material-icons">mode_edit</div>
+            </a>
+            <ul>
+              <li><a href="#modal1" class="btn-floating modal-trigger"><i class="material-icons blue">mode_edit</i></a></li>
+        <li><a href="#modal2" class="btn-floating modal-trigger"><i class="material-icons blue">folder</i></a></li>
+        <li><a href="#modal3" class="btn-floating modal-trigger "><i class="material-icons blue">people_alt</i></a></li>
+        
+            </ul>
+          </div>
+    
+    
+          <div class="modal" id="modal1">
+            <div class="modal-content">
+              <h2>Add Post</h2>
+              <form action="">
+                <div class="input-field">
+                  <input type="text" placeholder="Title" class="validate">
+                </div>
+                <div class="input-field col s12">
+                  <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                  <label>Materialize Select</label>
+                </div>
+                
+    
+                <textarea name="text_editor"></textarea>
+        <script>
+            CKEDITOR.replace( 'text_editor' );
+        </script>
+    
+                
+    
+                <input type="submit" class="btn">
+    
+              </form>
+            </div>
+          </div>
+    
+    
+          <div class="modal" id="modal2">
+            <div class="modal-content">
+              <h2>Add Category</h2>
+              <div class="input-field">
+                <input type="text" placeholder="Titre" class="validate">
+              </div>
+              <input type="submit" class="btn">
+            </div>
+          </div>
+    
+          <div class="modal" id="modal3">
+            <div class="modal-content">
+              <h2>Add User</h2>
+              <div class="input-field">
+                <input type="text" placeholder="Name" class="validate">
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Email" class="validate">
+              </div>
+              <div class="input-field">
+                <input type="password" placeholder="Pasword" class="validate">
+              </div>
+              <div class="input-field">
+                <input type="password" placeholder="Confirm Password" class="validate">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <input type="submit" class="btn">
+            </div>
+          </div>
+
+
+
+
+
+
+      
+      <div class="row" style="width: 100%;">
+        <div class="page-footer blue" style="padding: 30px; position: absolute; width: 100%; bottom: 0; right: 0;">
+          <p class="center-align">MyAdmin CodeLOccol Copyright © 2019</p>
+        </div>
+      </div>
+
+
+
+      
+
+
+
+
+</body>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems)
+  });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+</script>
+</html>
